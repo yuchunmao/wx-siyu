@@ -1,6 +1,6 @@
-.userinfo, .uploader, .tunnel {  
+.userinfo, .uploader, .tunnel {
   /* height: 140rpx; */
-  width: 100%;    
+  width: 100%;
   border-left: none;
   border-right: none;
   display: flex;
@@ -35,7 +35,7 @@
   color: #007aff;
   background-color: white;
   background-size: cover;
-  text-align: left;  
+  text-align: left;
   margin-left: 10px;
 }
 
@@ -54,7 +54,7 @@
 }
 .my-bar .background{
   width: 100vw;
-  height: 350rpx; 
+  height: 350rpx;
 }
 .my-box{
   position: absolute;
@@ -178,4 +178,8 @@
   margin: 64rpx;
   color: #666;
   font-size: 26rpx;
+}
+
+.telephone {
+  margin: 20rpx 0 20rpx 100rpx;
 }
