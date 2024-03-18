@@ -1,70 +1,7 @@
-# 微信小程序——餐饮点餐商城
+# 思雨花卉小程序——线上商城
 
-微信小程序——餐饮点餐商城，是针对餐饮行业推出的一套完整的餐饮解决方案，实现了用户在线点餐下单、外卖、叫号排队、支付、配送等功能，完美的使餐饮行业更高效便捷！
+思雨花卉小程序——线上商城 基于开源项目bee进行修改，感谢原作者的开源分享。
 
-大家如果在使用过程有什么问题，欢迎通过lssues与我们交流！
-
-如果本项目对您有所帮助或者启发，请给我们 Star 吧，您的鼓励是我们最大对动力～
-
-# 招募开发者
-
-希望找一些志同道合的朋友一起来完善这个开源项目，持续更新下去，有兴趣的可以加入QQ群 ( 详见下面的QQ群 ) 联系管理员，期待您的加入！
-
-# 加微信联系我
-
-<img src="https://dcdn.it120.cc/2022/09/19/7b884d58-541a-404b-a805-457540d7f87f.jpeg" width="200px">
-
-# 推荐一个订座取号的开源项目
-
-最近经常有人咨询说需要订座和取号的功能，api工厂有一个基于 uni-app 的开源模板，可能大家没注意，再把地址贴一下，有需要的自取：
-
-- [仿海底捞订座排队 (uni-app)](https://github.com/gooking/dingzuopaidui)
-- [码云镜像](https://gitee.com/javazj/dingzuopaidui)
-
-
-# 自提/外卖 扫码体验
-
-<img src="https://dcdn.it120.cc/2021/01/19/b388b014-7ae0-4b3a-9d6f-30c8b3082fe6.jpg" width="200px">
-
-
-# 扫码点餐演示
-
-| 座号A1 | 座号A2 | 座号A3 | 座号A4 | 座号A5 |
-| :------: | :------: | :------: | :------: | :------: |
-| <img src="https://dcdn.it120.cc/cuser/27/2021/09/26/cbb91217-47b1-4af1-a0e5-55df0efd3566.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/cbb30b43-15df-4564-87ef-3416f58ab0c8.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/150cd47b-e769-49fc-bca6-be8c5fe84f49.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/b5a44d1f-cea4-437f-802d-a36c728ff459.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/99c47ba3-50ba-4431-93c6-e10f527a5e28.png" width="200px"> |
-
-
-| 座号A6 | 座号A7 | 座号A8 | 座号A9 | 座号A10 |
-| :------: | :------: | :------: | :------: | :------: |
-| <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/aca7a7fd-72c9-4d89-a903-d82e6b8b8f83.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/77f16752-656f-4218-99df-c82c5db1921a.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/e3be04c4-9c0f-41c8-9482-b645699d1df4.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/352c7e84-56ec-4961-9e7d-cc4e752cf154.png" width="200px"> | <img src="https://dcdn.it120.cc/cuser/27/2023/01/04/78adb196-231d-41b7-be8d-51febc022bac.png" width="200px"> |
-
-## 桌号管理
-
-    登录后台，左侧菜单 “桌号管理”，添加并管理你的桌号信息，添加以后在列表你将可以看到 ID 和 密钥，这两个数据用来生成桌子的二维码
-
-<img src="https://dcdn.it120.cc/2022/12/30/e76a0320-992a-4932-9d58-dec3fd6630b8.png">
-
-## 生成桌子二维码
-
-    例如上面的ID为 308，密钥为 d3PiIY，那么现在去左侧菜单微信设置 -> 小程序设置 -> 获取小程序二维码（圆形码），即可获取小程序码：
-    填写信息如下：
-- 页面路径: pages/index/index
-- scene参数: shopId=12879,id=308,key=d3PiIY
-
-其中 shopId 为你对应的门店ID，其他参数默认就可以了
-
-<img src="https://dcdn.it120.cc/2022/12/30/6c807326-8db9-465a-912e-58847b28658c.png">
-
-
-# QQ交流群
-
-| 交流群4（276780260）|
-| :------: |
-| <img src="https://dcdn.it120.cc/2022/12/20/5e4d6d5b-1361-476d-912f-ee740f036ec6.jpeg" width="200px">|
-
-| 交流群1（已满）（926321567） | 交流群2（已满）（671428068） | 交流群3（已满）（709136251） |
-| :------: | :------: | :------: |
-| <img src="https://dcdn.it120.cc/2020/07/27/e3d09fd2-ace0-4cf4-9d71-e0454591ff54.png" width="200px">| <img src="https://dcdn.it120.cc/2020/12/27/b709cceb-befc-405b-8c5a-c8f9e90a1a5b.png" width="150px">| <img src="https://dcdn.it120.cc/2021/09/13/751cb675-265e-4be1-8f2e-f26935f693d7.png" width="150px">| 
 
 # 本项目使用了下面的组件，在此鸣谢
 
@@ -136,17 +73,6 @@ APPID 务必要改成你自己的小程序的 APPID
 <img src="https://dcdn.it120.cc/yuque/0/2020/png/572726/1581236703094-ce5c7f32-c60d-4e1b-bacb-21439e1d2721.png?x-oss-process=image%2Fresize%2Cw_1500 " width="200px">
 
 - [如何查看自己的subDomain](https://www.yuque.com/apifm/doc/qr6l4m)
-
-## 用户自提的订单如何扫码核销
-
-用户选择自提的订单，会在底部取餐菜单界面显示订单信息以及取餐码，商家可通过 “我的” --> “扫码核销” 菜单，点击以后调起手机相机，扫用户出示的取餐码完成核销
-
-但是默认情况下，是看不见  “我的” --> “扫码核销” 菜单的，需要在后台 “系统设置” --> “系统参数” ，添加文本类型的参数：
-
-- 参数名 order_hx_uids
-- 参数值，具有核销权限的用户的用户编号，多个用户编号，使用英文的逗号分隔
-
-重新进入小程序以后，就可以看见 “扫码核销” 的菜单了
 
 # 配置说明
 
