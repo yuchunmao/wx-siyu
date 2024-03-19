@@ -1,0 +1,31 @@
+export const addressList = [{
+    id: 1,
+    name: '虞春茂',
+    address: '详细地址',
+    mobile: 13270169698,
+    isDefault: false
+}, {
+    id: 2,
+    name: '虞春茂',
+    address: '详细地址2',
+    mobile: 13270169698,
+    isDefault: true
+}, {
+    id: 3,
+    name: '虞春茂',
+    address: '详细地址3',
+    mobile: 13270169698,
+    isDefault: false
+}, {
+    id: 4,
+    name: '虞春茂',
+    address: '详细地址4',
+    mobile: 13270169698,
+    isDefault: false
+}, {
+    id: 5,
+    name: '虞春茂',
+    address: '详细地址5',
+    mobile: 13270169698,
+    isDefault: false
+}]

@@ -54,7 +54,7 @@
 }
 .my-bar .background{
   width: 100vw;
-  height: 350rpx;
+  height: 250rpx;
 }
 .my-box{
   position: absolute;

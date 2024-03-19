@@ -1002,10 +1002,12 @@ export const goodsList = [{
 export const goodsDetail = {
     id: 1,
     name: '绿箩',
-    description: '绿色植物，价格实惠，净化空气',
+    description: '绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气绿色植物，价格实惠，净化空气',
     price: 10.00,
     withBasinPrice: 15.00,
     picture: 'https://dcdn.it120.cc/2020/08/01/c8244a16-6848-40e3-9d4d-60ebe8dc7416.jfif',
     minBuyNumber: 1,
-    stores: 100
+    stores: 100,
+    label: '绿色植物',
+    pics:['https://dcdn.it120.cc/2020/08/01/c8244a16-6848-40e3-9d4d-60ebe8dc7416.jfif','https://dcdn.it120.cc/2020/08/01/c8244a16-6848-40e3-9d4d-60ebe8dc7416.jfif','https://dcdn.it120.cc/2020/08/01/c8244a16-6848-40e3-9d4d-60ebe8dc7416.jfif']
 }
