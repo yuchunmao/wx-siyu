@@ -50,76 +50,11 @@
                 <van-button wx:elif="{{item.propertyIds || item.hasAddition || item.hasGoodsTimes}}" size="small"
                             color="#e64340" round data-idx="{{index}}" bind:click="showGoodsDetailPOP">选规格
                 </van-button>
-                <van-icon wx:else name="add" color="#e64340" size="50rpx" data-idx="{{index}}" bind:click="addCart1"/>
+                <van-icon wx:else name="add" color="#e64340" size="50rpx" data-idx="{{index}}" bind:click="addCartByList"/>
             </view>
         </van-card>
     </scroll-view>
 </view>
-
-<!--<view class="cart-bar" wx:if="{{shippingCarInfo && shippingCarInfo.number}}">-->
-<!--    <view class="l" bindtap="showCartPop">-->
-<!--        <van-button type="default" round icon="shopping-cart-o">购物车</van-button>-->
-<!--        <view class="badge">{{shippingCarInfo.number}}</view>-->
-<!--    </view>-->
-<!--    <view class="r">-->
-<!--        <view class="amount"><text>¥</text>{{shippingCarInfo.price}}-->
-<!--        </view>-->
-<!--        <view wx:if="{{shopIsOpened}}" class="topay" bindtap="goPay">选好了</view>-->
-<!--        <view wx:elif="{{ !shopInfo }}" class="topay" bindtap="getshopInfo">获取门店</view>-->
-<!--        <view wx:else class="topay noopen">未营业</view>-->
-<!--    </view>-->
-<!--</view>-->
-
-
-
-<!--<van-popup-->
-<!--        show="{{ showGoodsDetailPOP }}"-->
-<!--        custom-style="max-height: 80%;z-index:99999;"-->
-<!--        closeable-->
-<!--        close-icon="close"-->
-<!--        position="bottom"-->
-<!--        bind:close="hideGoodsDetailPOP">-->
-<!--    <image wx:if="{{ showGoodsDetailPOP }}" mode='aspectFill' class='photos-00' src='{{curGoodsMap.basicInfo.pic}}'></image>-->
-<!--    <view class="title-name">{{curGoodsMap.basicInfo.name}}</view>-->
-<!--    <view wx:for="{{curGoodsMap.properties}}" wx:key="id" class="content-1">-->
-<!--        <view class="title">{{item.name}}</view>-->
-<!--        <view class="box-1">-->
-<!--            <view wx:for="{{item.childsCurGoods}}" wx:key="id" wx:for-item="small" wx:for-index="index2" class="title-1 {{small.selected?'active':''}}" data-idx1="{{index}}" data-idx2="{{index2}}" bindtap="skuClick">{{small.name}}</view>-->
-<!--        </view>-->
-<!--    </view>-->
-<!--    <view wx:for="{{goodsAddition}}" wx:key="id" class="content-1">-->
-<!--        <view class="title">{{item.name}}</view>-->
-<!--        <view class="box-1">-->
-<!--            <view wx:for="{{item.items}}" wx:key="id" wx:for-item="small" wx:for-index="index2" class="title-1 {{small.active?'active':''}}" data-idx1="{{index}}" data-idx2="{{index2}}" bindtap="skuClick2">{{small.name}}</view>-->
-<!--        </view>-->
-<!--    </view>-->
-<!--    <view wx:for="{{goodsTimesSchedule}}" wx:key="id" class="content-1">-->
-<!--        <view class="title">{{item.day}}</view>-->
-<!--        <view class="box-1">-->
-<!--            <view wx:for="{{item.items}}" wx:key="id" wx:for-item="small" wx:for-index="index2" class="title-1 {{small.active?'active':''}}" data-idx1="{{index}}" data-idx2="{{index2}}" bindtap="skuClick3">{{small.name}}</view>-->
-<!--        </view>-->
-<!--    </view>-->
-
-<!--    <view wx:if="{{curGoodsMap.content}}" class="introduce">-->
-<!--        <view class="title">产品介绍</view>-->
-<!--        <view class="content">-->
-<!--            <parser html="{{curGoodsMap.content}}" />-->
-<!--        </view>-->
-<!--    </view>-->
-
-<!--    <view class="blank"></view>-->
-<!--    <view class="add-bar">-->
-<!--        <view class="add-box">-->
-<!--            <view class="price"><text>¥</text>{{curGoodsMap.price}}</view>-->
-<!--            <van-stepper value="{{ curGoodsMap.number }}" min="{{curGoodsMap.basicInfo.minBuyNumber}}" max="{{ buyNumMax }}" bind:change="goodsStepChange"/>-->
-<!--        </view>-->
-<!--        <view class="add-cart">-->
-<!--            <van-button wx:if="{{lijipingtuanbuy}}" block color="#e64340" bind:click="pingtuanbuy">拼团抢购</van-button>-->
-<!--            <van-button wx:else block color="#e64340" bind:click="addCart2">加入购物车</van-button>-->
-<!--        </view>-->
-<!--    </view>-->
-<!--</van-popup>-->
-
 
 <van-popup
         show="{{ showGoodsDetailPOP }}"
@@ -158,7 +93,7 @@
     <view class="blank"></view>
     <view class="add-bar">
         <view class="add-box">
-            <view class="price"><text>¥</text>{{curGoodsMap.totalPrice}}
+            <view class="price"><text>¥</text>{{curGoodsMap.goodsDetail.price}}
             </view>
             <van-stepper value="{{ curGoodsMap.number }}" min="{{curGoodsMap.goodsDetail.minBuyNumber}}"
                          max="{{ curGoodsMap.goodsDetail.stores }}" bind:change="goodsStepChange"/>
@@ -170,18 +105,3 @@
 </van-popup>
 
 
-<van-overlay show="{{ !scanDining && showCouponPop }}" bind:click="couponOverlayClick">
-    <view class="couponOverlay-container">
-        <image src="/images/coupon.png" bindtap="couponImageClick"></image>
-    </view>
-</van-overlay>
-
-
-<block wx:if="{{ scanDining }}">
-    <van-tabbar active="{{ 0 }}" fixed="{{ false }}" inactive-color="#6e6d6b" active-color="#e64340"
-                bind:change="tabbarChange">
-        <van-tabbar-item icon="goods-collect-o">点餐</van-tabbar-item>
-        <van-tabbar-item icon="shopping-cart-o">购物车</van-tabbar-item>
-        <van-tabbar-item icon="bill-o">已点</van-tabbar-item>
-    </van-tabbar>
-</block>
